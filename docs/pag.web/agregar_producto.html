@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto - Paraíso del Artesano</title>
+    <link rel="stylesheet" href="pagweb.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="partesuperior">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b>Paraíso Del Artesano</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#"><b>PQR</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><b>Inicio</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><b>Contacto</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><b>Novedades</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><b>Ofertas del día</b></a></li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="#" class="nav-link"><img src="icons8-carrito-de-compras-64.png" alt="" width="40px"></a>
+            <a href="#" class="nav-link"><b>Mi Cuenta</b></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <h2>Agregar Producto</h2>
+    <form>
+      <div class="mb-3">
+        <label for="titulo" class="form-label">Título del Producto</label>
+        <input type="text" class="form-control" id="titulo" placeholder="Ingrese el título del producto" required>
+      </div>
+      <div class="mb-3">
+        <label for="descripcion" class="form-label">Descripción</label>
+        <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingrese la descripción" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio" required>
+      </div>
+      <div class="mb-3">
+        <label for="categoria" class="form-label">Categoría</label>
+        <select class="form-select" id="categoria" required>
+          <option value="" disabled selected>Seleccione una categoría</option>
+          <option value="artesanias">Artesanías</option>
+          <option value="decoracion">Decoración</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="imagen" class="form-label">Imagen del Producto</label>
+        <input type="file" class="form-control" id="imagen" accept="image/*" required>
+      </div>
+      <button type="submit" class="btn btn-success">Agregar Producto</button>
+    </form>
+
+    <div class="mt-5">
+      <h3>Productos Agregados</h3>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Producto 1</h5>
+          <p class="card-text">Descripción breve del producto 1.</p>
+          <a href="#" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+      <div class="card mt-2">
+        <div class="card-body">
+          <h5 class="card-title">Producto 2</h5>
+          <p class="card-text">Descripción breve del producto 2.</p>
+          <a href="#" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="text-center">&copy; 2023 Paraíso del Artesano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
